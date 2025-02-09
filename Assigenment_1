@@ -1,0 +1,46 @@
+Here’s a step-by-step guide on how to create a Git repository named 2302031000126 and create two folders named Assignment_1 and Assignment_2:
+1. Initialize a New Git Repository
+1.	Open your terminal (Command Prompt or PowerShell on Windows, Terminal on Mac or Linux).
+2.	Navigate to the location where you want to create the repository. You can use the cd command to change directories. For example: cd path/to/your/directory
+3.	Run the following command to initialize a new Git repository:
+        git init 2302031000126
+
+2. Create Folders Inside the Git Repository
+1.	Navigate into the newly created repository folder: cd 2302031000126
+
+Create two folders named Assignment_1 and Assignment_2 using the following commands: mkdir Assignment_1
+                         mkdir Assignment_2
+
+This will create two directories inside your Git repository.
+
+2.	Add the Changes to Git
+
+1.Now that the folders are created, you need to add them to the Git             repository. Run the following command to add all the changes (the new folders) to the staging area: git add .
+
+2.Next, commit the changes with a message describing what you've done: git commit -m "Create folders Assignment_1 and Assignment_2"
+
+
+3. Add the Changes to Git
+1.	Now that the folders are created, you need to add them to the Git repository. Run the following command to add all the changes (the new folders) to the staging area: git add .
+
+
+2.	Next, commit the changes with a message describing what you've done:
+        git commit -m "Create folders Assignment_1 and Assignment_2"
+
+
+4. (Optional) Connect to a Remote Repository
+If you want to push your local repository to a remote repository (e.g., on GitHub), follow these additional steps:
+
+1.Add the remote URL (replace <REMOTE_URL> with the actual URL of your remote repository): git remote add origin <REMOTE_URL>
+
+2. Push the changes to the remote repository:
+     git push -u origin master
+
+
+
+
+
+
+
+
+
