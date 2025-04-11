@@ -1,0 +1,606 @@
+/* Global Styles */
+:root {
+    --primary-color: #3a86ff;
+    --secondary-color: #8338ec;
+    --accent-color: #ff006e;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --gray-color: #6c757d;
+    --light-gray: #e9ecef;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: var(--dark-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+  }
+  
+  header h1 {
+    color: var(--primary-color);
+    font-size: 24px;
+  }
+  
+  .search-bar {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search-bar button {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+  
+  .sidebar-section {
+    margin-bottom: 25px;
+  }
+  
+  .sidebar-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sidebar-section h3 a {
+    font-size: 14px;
+    color: var(--gray-color);
+    text-decoration: none;
+  }
+  
+  .user-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    margin-right: 10px;
+    overflow: hidden;
+  }
+  
+  .user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .user-info h4 {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  
+  .user-info p {
+    font-size: 12px;
+    color: var(--gray-color);
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .stat-label {
+    font-size: 12px;
+    color: var(--gray-color);
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+  
+  .post-form {
+    margin-bottom: 20px;
+  }
+  
+  .post-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 10px;
+  }
+  
+  .post-form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sort-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .sort-options select {
+    padding: 5px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .post {
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .post-user {
+    margin-left: 10px;
+  }
+  
+  .post-user h4 {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  
+  .post-user p {
+    font-size: 12px;
+    color: var(--gray-color);
+  }
+  
+  .post-content {
+    margin-bottom: 15px;
+  }
+  
+  .post-content p {
+    margin-bottom: 10px;
+  }
+  
+  .post-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .post-actions {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--light-gray);
+    padding-top: 10px;
+  }
+  
+  .post-action {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    color: var(--gray-color);
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .post-action i {
+    margin-right: 5px;
+  }
+  
+  /* Right Sidebar Styles */
+  .right-sidebar {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+  
+  .profile-card {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    margin: 0 auto 10px;
+    overflow: hidden;
+  }
+  
+  .profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .profile-card p {
+    font-size: 14px;
+    color: var(--gray-color);
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  
+  .hashtag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .hashtag {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: var(--light-gray);
+    border-radius: 15px;
+    font-size: 12px;
+    color: var(--gray-color);
+  }
+  
+  /* Profile Page Styles */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-header-info {
+    margin-left: 20px;
+  }
+  
+  .profile-header-info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .profile-header-info p {
+    color: var(--gray-color);
+  }
+  
+  .profile-stats {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .profile-stat {
+    text-align: center;
+    padding: 0 15px;
+    border-right: 1px solid var(--light-gray);
+  }
+  
+  .profile-stat:last-child {
+    border-right: none;
+  }
+  
+  .profile-stat-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .profile-stat-label {
+    font-size: 12px;
+    color: var(--gray-color);
+  }
+  
+  .profile-section {
+    margin-bottom: 30px;
+  }
+  
+  .profile-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill {
+    padding: 5px 10px;
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .experience-item {
+    margin-bottom: 20px;
+  }
+  
+  .experience-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .experience-company {
+    color: var(--gray-color);
+    margin-bottom: 5px;
+  }
+  
+  .experience-duration {
+    font-size: 14px;
+    color: var(--gray-color);
+    margin-bottom: 10px;
+  }
+  
+  .experience-description {
+    font-size: 14px;
+  }
+  
+  /* Career Path Page */
+  .career-path-info {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .career-path-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  .career-path-info h3 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+    color: var(--primary-color);
+  }
+  
+  /* Counsellor Profile */
+  .counsellor-profile {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 30px;
+  }
+  
+  .counsellor-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .counsellor-header h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .counsellor-header p {
+    color: var(--gray-color);
+  }
+  
+  .counsellor-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .counsellor-stat {
+    background-color: var(--light-gray);
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .counsellor-stat h4 {
+    font-size: 14px;
+    color: var(--gray-color);
+    margin-bottom: 5px;
+  }
+  
+  .counsellor-stat p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .review {
+    border-bottom: 1px solid var(--light-gray);
+    padding: 15px 0;
+  }
+  
+  .review:last-child {
+    border-bottom: none;
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .review-title {
+    font-weight: bold;
+  }
+  
+  .review-date {
+    color: var(--gray-color);
+    font-size: 14px;
+  }
+  
+  .review-author {
+    font-size: 14px;
+    color: var(--gray-color);
+  }
+  
+  /* Ask Question Page */
+  .question-form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+  }
+  
+  /* Navigation */
+  .navigation {
+    margin-top: 20px;
+  }
+  
+  .nav-list {
+    list-style: none;
+  }
+  
+  .nav-list li {
+    margin-bottom: 10px;
+  }
+  
+  .nav-list a {
+    color: var(--dark-color);
+    text-decoration: none;
+  }
+  
+  .nav-list a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Footer */
+  .footer-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--light-gray);
+  }
+  
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .container {
+      grid-template-columns: 200px 1fr;
+    }
+    
+    .right-sidebar {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+    
+    .sidebar {
+      display: none;
+    }
+    
+    .profile-header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .profile-header-info {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    
+    .counsellor-stats {
+      grid-template-columns: 1fr 1fr;
+    }
+  }

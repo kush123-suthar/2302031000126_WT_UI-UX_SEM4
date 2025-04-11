@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xaphal - Feed</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    header a{
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+     <a href="index.html"> <h1>Xaphal</h1></a>
+     <a href="counsellor.html"> <h3>counsellor</h3></a>
+      <a href="career-path.html"><h3>career path</h3></a>
+      <a href="ask-question.html"><h3>QUESTIONS?</h3></a>  
+          <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h2>YOUR DASHBOARD</h2>
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-number">367</div>
+            <div class="stat-label">views today</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15</div>
+            <div class="stat-label">posts views</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">9</div>
+            <div class="stat-label">search appearances</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>VISITORS <a href="#">VIEW ALL</a></h3>
+        <div class="user-item">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Andrew Alexander">
+          </div>
+          <div class="user-info">
+            <h4>Andrew Alexander</h4>
+            <p>Team Head of Google</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>CONNECTIONS <a href="#">VIEW ALL</a></h3>
+        <div class="user-item">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Andrew Black">
+          </div>
+          <div class="user-info">
+            <h4>Andrew Black</h4>
+            <p>UX manager, 10,000 coaches...</p>
+          </div>
+        </div>
+        <div class="user-item">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Thomas Steward">
+          </div>
+          <div class="user-info">
+            <h4>Thomas Steward</h4>
+            <p>iOS developer</p>
+          </div>
+        </div>
+        <div class="user-item">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Brandon Wilson">
+          </div>
+          <div class="user-info">
+            <h4>Brandon Wilson</h4>
+            <p>Senior UX designer</p>
+          </div>
+        </div>
+        <div class="user-item">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Kyle Fisher">
+          </div>
+          <div class="user-info">
+            <h4>Kyle Fisher</h4>
+            <p>Product designer at Gina...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>OUR YOUTUBE VIDEOS</h3>
+        <div class="user-item">
+          <div class="user-info">
+            <h4>UX Foundations: Prototyping</h4>
+            <p>27.5K Viewers</p>
+          </div>
+        </div>
+        <div class="user-item">
+          <div class="user-info">
+            <h4>Designing with Adobe XD and PTC</h4>
+            <p>32.8K Viewers</p>
+          </div>
+        </div>
+        <div class="user-item">
+          <div class="user-info">
+            <h4>UX Foundations: Styles and GUIs</h4>
+            <p>13.8K Viewers</p>
+          </div>
+        </div>
+        <a href="#">SEE ALL RECOMMENDATIONS</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div class="post-form">
+        <h2>ASK QUESTION</h2>
+        <textarea placeholder="What's on your mind?"></textarea>
+        <div class="post-form-actions">
+          <div class="sort-options">
+            <span>SORT BY:</span>
+            <select>
+              <option>TRENDING</option>
+              <option>RECENT</option>
+              <option>POPULAR</option>
+            </select>
+          </div>
+          <button class="btn">Post</button>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Theresa Steward">
+          </div>
+          <div class="post-user">
+            <h4>Theresa Steward</h4>
+            <p>iOS developer</p>
+          </div>
+        </div>
+        <div class="post-content">
+          <p>What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn't practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).</p>
+        </div>
+        <div class="post-actions">
+          <div class="post-action like">
+            <i class="far fa-thumbs-up"></i>
+            <span class="like-count">42</span>
+          </div>
+          <div class="post-action comment">
+            <i class="far fa-comment"></i>
+            <span>9</span>
+          </div>
+          <div class="post-action share">
+            <i class="fas fa-share"></i>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Kyle Fisher">
+          </div>
+          <div class="post-user">
+            <h4>Kyle Fisher</h4>
+            <p>Product designer at Gina Corp.</p>
+          </div>
+        </div>
+        <div class="post-content">
+          <p>How's your day going, guys?</p>
+        </div>
+        <div class="post-actions">
+          <div class="post-action like">
+            <i class="far fa-thumbs-up"></i>
+            <span class="like-count">12</span>
+          </div>
+          <div class="post-action comment">
+            <i class="far fa-comment"></i>
+            <span>3</span>
+          </div>
+          <div class="post-action share">
+            <i class="fas fa-share"></i>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Brandon Wilson">
+          </div>
+          <div class="post-user">
+            <h4>Brandon Wilson</h4>
+            <p>Senior UX designer</p>
+          </div>
+        </div>
+        <div class="post-content">
+          <p>There is some new guidelines for iOS</p>
+          <ul>
+            <li>iOS 11 guidelines for UX/UI designers (PDF file, 256 MB)</li>
+            <li>iOS 11 guidelines for developers (PDF file, 245 MB)</li>
+          </ul>
+        </div>
+        <div class="post-actions">
+          <div class="post-action like">
+            <i class="far fa-thumbs-up"></i>
+            <span class="like-count">89</span>
+          </div>
+          <div class="post-action comment">
+            <i class="far fa-comment"></i>
+            <span>7</span>
+          </div>
+          <div class="post-action share">
+            <i class="fas fa-share"></i>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Audrey Alexander">
+          </div>
+          <div class="post-user">
+            <h4>Audrey Alexander</h4>
+            <p>Team head at Google</p>
+          </div>
+        </div>
+        <div class="post-content">
+          <p>The bun runs along the road and meets a wolf. «Little bun, little bun, I want to eat you!» says the wolf. «I ran away from Grandfather, I ran away from Grandmother, I ran away from the hare. And I can run away from you, grey wolf!» says the bun and runs away.</p>
+        </div>
+        <div class="post-actions">
+          <div class="post-action like">
+            <i class="far fa-thumbs-up"></i>
+            <span class="like-count">10</span>
+          </div>
+          <div class="post-action comment">
+            <i class="far fa-comment"></i>
+            <span>0</span>
+          </div>
+          <div class="post-action share">
+            <i class="fas fa-share"></i>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-outline" style="width: 100%;">LOAD MORE</button>
+    </main>
+
+    <aside class="right-sidebar">
+      <div class="profile-card">
+        <div class="profile-avatar">
+          <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Bhavtosh Upadhyay">
+        </div>
+        <h3>Bhavtosh Upadhyay</h3>
+        <p>Freelance UX/UI designer, 50+ projects in web design, mobile apps (iOS & Android) and creative projects. Open to offers.</p>
+        <a href="profile.html" class="btn">VIEW PUBLIC PROFILE</a>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>MY GROUPS <a href="#">EDIT LIST</a></h3>
+        <ul class="nav-list">
+          <li><a href="#">Moscow State Linguistic University</a></li>
+          <li><a href="#">Digital freelancers group</a></li>
+          <li><a href="#">Interaction design association</a></li>
+        </ul>
+        <a href="#">SHOW ALL (6)</a>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>FOLLOWED HASHTAGS</h3>
+        <div class="hashtag-list">
+          <span class="hashtag">#work</span>
+          <span class="hashtag">#business</span>
+          <span class="hashtag">#userinterface</span>
+          <span class="hashtag">#digital</span>
+          <span class="hashtag">#userexperience</span>
+          <span class="hashtag">#ux</span>
+          <span class="hashtag">#ui</span>
+          <span class="hashtag">#freelance</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>TRENDING CAREER PATHS</h3>
+        <ul class="nav-list">
+          <li><a href="#">Careers in design <span>8.3K viewers</span></a></li>
+          <li><a href="#">Careers in project management <span>6.2K viewers</span></a></li>
+          <li><a href="#">Careers in engineering <span>5.3K viewers</span></a></li>
+        </ul>
+        <a href="#">More</a>
+      </div>
+
+      <div class="navigation">
+        <h3>Navigation</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <ul class="nav-list">
+            <li><a href="#">About Xaphal</a></li>
+            <li><a href="career-path.html">Career Paths</a></li>
+            <li><a href="#">Student Ambassador</a></li>
+            <li><a href="#">Join our team</a></li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="#">College Partnership</a></li>
+            <li><a href="#">Join as counselor/mentor</a></li>
+            <li><a href="#">Recruiters</a></li>
+            <li><a href="#">Advertise on Xaphal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-actions">
+        <a href="ask-question.html">QUESTIONS?</a>
+        <a href="#">SETTINGS</a>
+        <span>ENGLISH</span>
+      </div>
+    </aside>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+/* Responsive Styles for Xaphal Platform */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1200px) {
+    .container {
+      grid-template-columns: 200px 1fr;
+    }
+    
+    .right-sidebar {
+      display: none;
+    }
+  
+    /* Adjust main content padding */
+    .main-content {
+      padding: 15px;
+    }
+  
+    /* Make profile header stack on medium screens */
+    .profile-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-header-info {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  
+    /* Adjust counsellor stats grid */
+    .counsellor-stats {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /* Make career path cards stack */
+    .career-path-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      padding: 10px;
+      gap: 15px;
+    }
+    
+    .sidebar {
+      display: none;
+    }
+  
+    /* Adjust header layout */
+    header {
+      padding: 10px 15px;
+    }
+  
+    .search-bar input {
+      padding: 8px;
+    }
+  
+    .search-bar button {
+      padding: 8px 12px;
+    }
+  
+    /* Make post form more compact */
+    .post-form textarea {
+      padding: 10px;
+    }
+  
+    /* Adjust post actions */
+    .post-actions {
+      justify-content: space-around;
+    }
+  
+    .post-action {
+      margin-right: 0;
+      flex: 1;
+      text-align: center;
+    }
+  
+    /* Profile page adjustments */
+    .profile-stats {
+      flex-wrap: wrap;
+    }
+  
+    .profile-stat {
+      flex: 1 0 50%;
+      padding: 10px;
+      border-right: none;
+      border-bottom: 1px solid var(--light-gray);
+    }
+  
+    .profile-stat:last-child {
+      border-bottom: none;
+    }
+  
+    /* Career path page adjustments */
+    .career-path-stats .stats {
+      flex-wrap: wrap;
+    }
+  
+    .career-path-stats .stat-item {
+      flex: 1 0 50%;
+      margin-bottom: 15px;
+    }
+  
+    /* Ask question form adjustments */
+    .question-form {
+      padding: 15px;
+    }
+  
+    /* Navigation adjustments */
+    .navigation ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  
+    /* Footer actions adjustments */
+    .footer-actions {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-actions a, 
+    .footer-actions span {
+      text-align: center;
+    }
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 576px) {
+    /* Further reduce padding and margins */
+    .container {
+      padding: 8px;
+      gap: 10px;
+    }
+  
+    header {
+      padding: 8px 10px;
+    }
+  
+    .main-content, 
+    .right-sidebar {
+      padding: 10px;
+    }
+  
+    /* Make buttons full width */
+    .btn {
+      display: block;
+      width: 100%;
+    }
+  
+    /* Adjust post header layout */
+    .post-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .post-user {
+      margin-left: 0;
+      margin-top: 8px;
+    }
+  
+    /* Single column layout for stats */
+    .stats, 
+    .profile-stats,
+    .career-path-stats .stats {
+      flex-direction: column;
+    }
+  
+    .stat-item,
+    .profile-stat,
+    .career-path-stats .stat-item {
+      flex: 1 0 100%;
+      margin-bottom: 10px;
+      padding: 10px 0;
+      border-right: none;
+      border-bottom: 1px solid var(--light-gray);
+    }
+  
+    /* Single column for navigation */
+    .navigation ul {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Adjust form elements */
+    .form-control {
+      padding: 8px;
+    }
+  
+    /* Hide less important elements on mobile */
+    .stat-label,
+    .profile-stat-label {
+      font-size: 11px;
+    }
+  
+    /* Adjust counsellor profile */
+    .counsellor-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .counsellor-stats {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Make career path cards full width */
+    .career-path-card {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* Very small devices (phones less than 400px) */
+  @media (max-width: 400px) {
+    /* Reduce font sizes */
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    h3 {
+      font-size: 16px;
+    }
+  
+    body {
+      font-size: 14px;
+    }
+  
+    /* Adjust post actions */
+    .post-action span {
+      display: none;
+    }
+  
+    .post-action i {
+      margin-right: 0;
+      font-size: 18px;
+    }
+  
+    /* Make sort options stack */
+    .sort-options {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .sort-options select {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    /* Adjust profile sections */
+    .profile-section h3 {
+      font-size: 16px;
+    }
+  
+    /* Reduce padding further */
+    .container {
+      padding: 5px;
+    }
+  
+    header {
+      padding: 5px 8px;
+    }
+  
+    .main-content, 
+    .right-sidebar {
+      padding: 8px;
+    }
+  }
+  
+  /* Orientation-specific adjustments */
+  @media screen and (orientation: landscape) and (max-width: 768px) {
+    /* Adjust layout for landscape on mobile */
+    .container {
+      grid-template-columns: 150px 1fr;
+    }
+  
+    .sidebar {
+      display: block;
+    }
+  
+    /* Reduce font sizes */
+    body {
+      font-size: 13px;
+    }
+  
+    /* Adjust header */
+    header h1 {
+      font-size: 18px;
+    }
+  
+    /* Make buttons more compact */
+    .btn {
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+  }
+  
+  /* Print styles */
+  @media print {
+    /* Hide unnecessary elements for printing */
+    header, 
+    .sidebar, 
+    .right-sidebar, 
+    .post-actions,
+    .footer-actions {
+      display: none;
+    }
+  
+    /* Adjust main content for printing */
+    .container {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+  
+    .main-content {
+      padding: 0;
+      box-shadow: none;
+      border: none;
+    }
+  
+    /* Ensure good print contrast */
+    body {
+      color: #000;
+      background: #fff;
+    }
+  
+    /* Add URL after links */
+    a::after {
+      content: " (" attr(href) ")";
+      font-size: 0.8em;
+      font-weight: normal;
+    }
+  }

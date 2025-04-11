@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xaphal - Ask Question</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+
+    }
+    header a{
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+     <a href="index.html"> <h1>Xaphal</h1></a>
+     <a href="counsellor.html"> <h3>counsellor</h3></a>
+      <a href="career-path.html"><h3>career path</h3></a>
+      <a href="ask-question.html"><h3>QUESTIONS?</h3></a>  
+          <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <div class="profile-card">
+        <div class="profile-avatar">
+          <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Bhavtosh Upadhyay">
+        </div>
+        <h3>Bhavtosh Upadhyay</h3>
+        <p>Freelance UX/UI designer, 50+ projects in web design, mobile apps (iOS & Android) and creative projects. Open to offers.</p>
+        <a href="profile.html" class="btn">VIEW PUBLIC PROFILE</a>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>MY ACTIVITY</h3>
+        <ul class="nav-list">
+          <li><a href="#">My Questions</a></li>
+          <li><a href="#">My Answers</a></li>
+          <li><a href="#">Saved Posts</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>MY SESSIONS</h3>
+        <div class="user-item">
+          <div class="user-info">
+            <h4>Tom Hoffman</h4>
+            <p>30/10/2022 · 10:00 AM</p>
+          </div>
+        </div>
+        <div class="user-item">
+          <div class="user-info">
+            <h4>David Beckham</h4>
+            <p>31/10/2022 · 3:00 PM</p>
+          </div>
+        </div>
+        <a href="#">View all</a>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>MY WALLET</h3>
+        <div class="user-item">
+          <div class="user-info">
+            <h4>Balance</h4>
+            <p>$4,567</p>
+          </div>
+        </div>
+        <button class="btn" style="width: 100%; margin-top: 10px;">Add Money</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <form id="ask-question-form" class="question-form">
+        <h2>ASK QUESTION</h2>
+        
+        <div class="form-group">
+          <label for="question-title">Title</label>
+          <input type="text" id="question-title" class="form-control" placeholder="Ask your question">
+        </div>
+        
+        <div class="form-group">
+          <label for="question-description">Description</label>
+          <textarea id="question-description" class="form-control" rows="5" placeholder="English"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="question-tags">Tags</label>
+          <input type="text" id="question-tags" class="form-control" placeholder="Put relevant keywords">
+        </div>
+        
+        <div class="form-group">
+          <label for="question-link">Link</label>
+          <input type="url" id="question-link" class="form-control" placeholder="Put associated link">
+        </div>
+        
+        <button type="submit" class="btn" style="width: 100%;">Submit Your Question</button>
+      </form>
+
+      <div class="sort-options">
+        <span>SORT BY:</span>
+        <select>
+          <option>TRENDING</option>
+          <option>RECENT</option>
+          <option>POPULAR</option>
+        </select>
+        <button class="btn btn-outline" style="margin-left: 10px;">SHUFFLE</button>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Theresa Steward">
+          </div>
+          <div class="post-user">
+            <h4>Theresa Steward</h4>
+            <p>iOS developer</p>
+          </div>
+        </div>
+        <div class="post-content">
+          <p>What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn't practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).</p>
+        </div>
+        <div class="post-actions">
+          <div class="post-action like">
+            <i class="far fa-thumbs-up"></i>
+            <span class="like-count">42</span>
+          </div>
+          <div class="post-action comment">
+            <i class="far fa-comment"></i>
+            <span>9</span>
+          </div>
+          <div class="post-action share">
+            <i class="fas fa-share"></i>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Brandon Wilson">
+          </div>
+          <div class="post-user">
+            <h4>Brandon Wilson</h4>
+            <p>Senior UX designer</p>
+          </div>
+        </div>
+        <div class="post-content">
+          <p>There is some new guidelines for iOS</p>
+          <ul>
+            <li>iOS 11 guidelines for UX/UI designers (PDF file, 256 MB)</li>
+            <li>iOS 11 guidelines for developers (PDF file, 245 MB)</li>
+          </ul>
+        </div>
+        <div class="post-actions">
+          <div class="post-action like">
+            <i class="far fa-thumbs-up"></i>
+            <span class="like-count">89</span>
+          </div>
+          <div class="post-action comment">
+            <i class="far fa-comment"></i>
+            <span>7</span>
+          </div>
+          <div class="post-action share">
+            <i class="fas fa-share"></i>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="user-avatar">
+            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Audrey Alexander">
+          </div>
+          <div class="post-user">
+            <h4>Audrey Alexander</h4>
+            <p>Team head at Google</p>
+          </div>
+        </div>
+        <div class="post-content">
+          <p>The bun runs along the road and meets a wolf. «Little bun, little bun, I want to eat you!» says the wolf. «I ran away from Grandfather, I ran away from Grandmother, I ran away from the hare. And I can run away from you, grey wolf!» says the bun and runs away.</p>
+        </div>
+        <div class="post-actions">
+          <div class="post-action like">
+            <i class="far fa-thumbs-up"></i>
+            <span class="like-count">10</span>
+          </div>
+          <div class="post-action comment">
+            <i class="far fa-comment"></i>
+            <span>0</span>
+          </div>
+          <div class="post-action share">
+            <i class="fas fa-share"></i>
+            <span>SHARE</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-outline" style="width: 100%;">LOAD MORE</button>
+    </main>
+
+    <aside class="right-sidebar">
+      <div class="sidebar-section">
+        <h3>HIGH IQ + INTELLIGENCE</h3>
+        <div class="user-item">
+          <div class="user-info">
+            <h4>Neurologists Debunk 11 Brain Myths | Debunked | Science Insider</h4>
+            <p>2.2M views · 1 month ago</p>
+          </div>
+        </div>
+        <p>Neuroscientists debunk 11 myths about the brain. They explain how the bigger brain doesn't necessarily mean smarter.</p>
+      </div>
+
+      <div class="navigation">
+        <ul class="nav-list">
+          <li><a href="#">About Xaphal</a></li>
+          <li><a href="#">Career Paths</a></li>
+          <li><a href="#">Student Ambassador</a></li>
+          <li><a href="#">Join our team</a></li>
+          <li><a href="#">College Partnership</a></li>
+          <li><a href="#">Join as counselor/mentor</a></li>
+          <li><a href="#">Recruiters</a></li>
+          <li><a href="#">Advertise on Xaphal</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-actions">
+        <a href="#">QUESTIONS?</a>
+        <a href="#">SETTINGS</a>
+        <span>ENGLISH</span>
+      </div>
+    </aside>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
